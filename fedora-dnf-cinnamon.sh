@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #Get the necessary components
+dnf install cinnamon* -y
 dnf install @cinnamon-desktop-environment -y
 dnf install tigervnc-server -y
-dnf reinstall gsettings-desktop-schemas -y
 
 #Setup the necessary files
 mkdir ~/.vnc
