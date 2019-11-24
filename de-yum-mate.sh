@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #Get the necessary components
-yum groupinstall mate-desktop -y
-yum install tigervnc-server -y
+dnf install @cinnamon-desktop-environment -y
+dnf install tigervnc-server -y
 
 #Setup the necessary files
 mkdir ~/.vnc
-wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Yum/Fedora/Mate/xstartup -P ~/.vnc/
-wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Yum/Fedora/Mate/vncserver-start -P /usr/local/bin/
-wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Yum/Fedora/Mate/vncserver-stop -P /usr/local/bin/
+wget https://raw.githubusercontent.com/CoccodrillooXDS/Cinnamon-AnLinux-Script/master/xstartup -P ~/.vnc/
+wget https://raw.githubusercontent.com/CoccodrillooXDS/Cinnamon-AnLinux-Script/master/vncserver-start -P /usr/local/bin/
+wget https://raw.githubusercontent.com/CoccodrillooXDS/Cinnamon-AnLinux-Script/master/vncserver-stop -P /usr/local/bin/
 chmod +x ~/.vnc/xstartup
 chmod +x /usr/local/bin/vncserver-start
 chmod +x /usr/local/bin/vncserver-stop
