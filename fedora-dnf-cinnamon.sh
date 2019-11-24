@@ -2,8 +2,8 @@
 
 #Get the necessary components
 dnf install @cinnamon-desktop-environment -y
-dnf install gsettings-desktop-schemas -y
 dnf install tigervnc-server -y
+dnf reinstall gsettings-desktop-schemas -y
 
 #Setup the necessary files
 mkdir ~/.vnc
