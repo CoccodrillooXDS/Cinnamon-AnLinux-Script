@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #Get the necessary components
-dnf update
 dnf install @cinnamon-desktop-environment -y
 dnf install tigervnc-server -y
 
