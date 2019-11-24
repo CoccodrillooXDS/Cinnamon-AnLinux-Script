@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Get the necessary components
+dnf update
 dnf install @cinnamon-desktop-environment -y
 dnf install tigervnc-server -y
 
@@ -22,7 +23,7 @@ echo "The VNC Server will be started at 127.0.0.1:5901"
 echo " "
 echo "You can connect to this address with a VNC Viewer you prefer"
 echo " "
-echo "Connect to this address will open a window with Mate Desktop Environment"
+echo "Connect to this address will open a window with Cinnamon Desktop Environment"
 echo " "
 echo " "
 echo " "
